@@ -14,7 +14,7 @@ def new
    end
 
    def edit
-
+    @group = Group.find(params[:id])
 
     end
 
@@ -44,7 +44,7 @@ def new
 
 
      def destroy
-       
+
 
     @group.destroy
     redirect_to groups_path, alert: "Group deleted"
