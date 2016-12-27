@@ -36,7 +36,7 @@ def new
      else
    render :edit
    end
-     end
+     
 
      def destroy
          @group = Group.find(params[:id])
